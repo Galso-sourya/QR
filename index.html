@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NightKey — QR Sign In</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">N</span>NIGHTKEY</a><span class="secure-label"><i></i> PHONE APPROVAL</span></header>
+    <section class="login-layout">
+      <div class="intro">
+        <div class="eyebrow"><span class="eyebrow-line"></span> PASSWORDLESS ACCESS</div>
+        <h1>Your phone.<br><span>Your key.</span></h1>
+        <p class="intro-copy">Sign in by scanning a one-time QR code with your phone. Review the request and approve it on your mobile device.</p>
+        <div class="feature-list">
+          <div class="feature"><span class="feature-icon">⌁</span><div><strong>Phone approval</strong><small>Confirm the request from your mobile device.</small></div></div>
+          <div class="feature"><span class="feature-icon">◷</span><div><strong>One-time QR code</strong><small>Each request expires after 90 seconds.</small></div></div>
+          <div class="feature"><span class="feature-icon">◇</span><div><strong>Live verification</strong><small>Your computer updates when approval arrives.</small></div></div>
+        </div>
+      </div>
+      <div class="login-card">
+        <div class="card-heading"><div><div class="card-kicker">WELCOME BACK</div><h2>Sign in to NightKey</h2></div><span class="live-pill"><i></i> LIVE</span></div>
+        <p class="card-subtitle">Scan this code with your phone camera.</p>
+        <div class="qr-frame"><div class="qr-placeholder" id="placeholder"><div class="qr-symbol">▦</div><span>Preparing secure QR code…</span></div><img id="qrImage" alt="One-time sign-in QR code" hidden><div class="qr-corner corner-tl"></div><div class="qr-corner corner-tr"></div><div class="qr-corner corner-bl"></div><div class="qr-corner corner-br"></div></div>
+        <div class="timer-row"><span id="statusText">Connecting to Firebase…</span><span id="timer">01:30</span></div>
+        <div class="progress-track"><div id="progress"></div></div>
+        <button class="primary-button" id="newCodeButton">Generate QR code <span>↗</span></button>
+        <div class="divider"><span>SECURE SIGN IN</span></div>
+        <div class="notice" id="notice" role="status">Set up your Firebase project and database rules to begin.</div>
+      </div>
+    </section>
+    <footer><span>© 2026 NIGHTKEY</span><span>FIREBASE QR AUTHENTICATION DEMO</span></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body></html>

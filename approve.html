@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Approve sign in — NightKey</title><link rel="stylesheet" href="styles.css"></head>
+<body class="approve-body"><main class="approve-card">
+  <a class="brand approve-brand" href="index.html"><span class="brand-mark">N</span>NIGHTKEY</a>
+  <div class="phone-icon">▣</div><div class="eyebrow centered"><span class="eyebrow-line"></span> LOGIN REQUEST</div>
+  <h1>Approve this<br><span>sign in?</span></h1>
+  <p class="approve-copy">A browser is requesting access. Only approve if you just started this sign-in on your own computer.</p>
+  <div class="device-row"><span>⌘</span><div><strong>New browser session</strong><small>QR code authentication</small></div><b class="pending-tag">PENDING</b></div>
+  <button id="approveButton" class="primary-button">Approve sign in <span>✓</span></button>
+  <p id="result" class="result" role="status">This request expires after 90 seconds.</p>
+  <p class="security-note">Didn't request this? Close this page. Never approve an unexpected login.</p>
+</main><script type="module" src="approve.js"></script></body></html>
